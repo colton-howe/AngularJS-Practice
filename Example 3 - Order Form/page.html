@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </head>
+    <body>
+        <div id="content" ng-app="myApp" ng-controller="myController">
+            <h1>Services</h1>
+            <ul>
+                <li ng-repeat=" x in services" ng-click="toggle(x)" ng-class="{active: x.active}">
+                    <span class="name">{{x.service}}</span>
+                    <span class="price">{{x.price | currency}}</span>
+                </li>
+            </ul>
+            <div class="total">
+                Total:
+                <span class="finalPrice">{{total | currency}}</span>
+            </div>
+            <script src="code.js"></script>
+        </div>
+    </body>
+</html>

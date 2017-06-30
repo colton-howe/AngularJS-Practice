@@ -6,5 +6,4 @@ app.controller('myController', function($scope){
     $scope.toggleVisibility = function(){
         $scope.viewable = !$scope.viewable;
     }
-
 });

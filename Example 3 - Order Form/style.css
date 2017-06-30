@@ -1,0 +1,41 @@
+/* Note: This is not my CSS. I am simply using it to see if my AngularJS is working in a similar fashion to the one on the
+example website located here https://tutorialzine.com/2013/08/learn-angularjs-5-examples */
+
+body {
+    text-align: center;
+}
+
+#content {
+    display: inline-block;
+    background-color: lightblue;
+    height: 380px;
+    width: 400px;
+}
+
+ul {
+    padding-right: 40px;
+}
+
+li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px 15px 10px;
+    text-align: left;
+    background-color: pink;
+    border-radius: 10px;
+    margin:20px 0 20px;
+}
+
+.price, .finalPrice {
+    float: right;
+}
+
+.total {
+    padding: 10px 55px 10px;
+    text-align: left;
+    border-top:1px solid rgba(255,255,255,0.5);
+}
+
+.active {
+    background-color:#8ec16d;
+}
