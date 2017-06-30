@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </head>
+    <body>
+        <div id="content" ng-app="myApp" ng-controller="myController" >
+            <input id="searchBox" type="text" ng-model="search_term" placeholder="Enter your search terms">
+            <ul>
+                <li ng-repeat="x in items | filter : search_term">
+                  <span><a href="{{x.url}}"><img src="{{x.image}}"></a>{{x.title}}</span>
+                </li>
+            </ul>
+            <script src="code.js"></script>
+        </div>
+    </body>
+</html>
