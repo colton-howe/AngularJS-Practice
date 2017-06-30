@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app>
+            <nav ng-click="$event.preventDefault()">
+                <a href="#" ng-click="currentPage='Home'">Home</a>
+                <a href="#" ng-click="currentPage='Projects'">Projects</a>
+                <a href="#" ng-click="currentPage='Services'">Services</a>
+                <a href="#" ng-click="currentPage='Contact'">Contact</a>
+            </nav>
+            <p ng-hide="currentPage">Please click an option</p>
+            <p ng-show="currentPage">You chose {{ currentPage }}</p>
+        </div>
+    </body>
+</html>
