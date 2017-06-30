@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myApp" ng-controller="myController">
+            <input type="text" ng-model="editText" ng-show="viewable"><br>
+            <p ng-click="toggleVisibility()">{{ editText }}</p>
+            <script src="code.js"></script>
+        </div>
+    </body>
+</html>
